@@ -1,0 +1,78 @@
+{
+ "images/backgrounds/terramadas-background-20261118-103452.jpg": {
+  "original": "terramadas-background-20261118-103452.png",
+  "recipe": {
+   "rot": 0,
+   "flipH": false,
+   "flipV": false,
+   "crop": {
+    "x": 0,
+    "y": 0,
+    "w": 1,
+    "h": 1
+   },
+   "bright": 0,
+   "contrast": 0,
+   "sat": 0
+  },
+  "width": 2400,
+  "quality": 82
+ },
+ "images/backgrounds/img-9310-20261118-103502.jpg": {
+  "original": "img-9310-20261118-103502.jpg",
+  "recipe": {
+   "rot": 0,
+   "flipH": false,
+   "flipV": false,
+   "crop": {
+    "x": 0,
+    "y": 0,
+    "w": 1,
+    "h": 1
+   },
+   "bright": 0,
+   "contrast": 0,
+   "sat": 0
+  },
+  "width": 2400,
+  "quality": 82
+ },
+ "images/jo3ri-transparant-white-20261118-103524.png": {
+  "original": "jo3ri-transparant-white-20261118-103524.png",
+  "recipe": {
+   "rot": 0,
+   "flipH": false,
+   "flipV": false,
+   "crop": {
+    "x": 0,
+    "y": 0,
+    "w": 1,
+    "h": 1
+   },
+   "bright": 0,
+   "contrast": 0,
+   "sat": 0
+  },
+  "width": 1600,
+  "quality": 82
+ },
+ "images/backgrounds/joeri-050821-20261118-105935.jpg": {
+  "original": "joeri-050821-20261118-105935.png",
+  "recipe": {
+   "rot": 0,
+   "flipH": false,
+   "flipV": false,
+   "crop": {
+    "x": 0,
+    "y": 0,
+    "w": 1,
+    "h": 1
+   },
+   "bright": 0,
+   "contrast": 0,
+   "sat": 0
+  },
+  "width": 2400,
+  "quality": 82
+ }
+}
