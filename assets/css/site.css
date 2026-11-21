@@ -1,1 +1,13 @@
-/* Your own additions to the template's style. The site editor writes the background picture here. */
+/* Your own additions to the template's style. */
+
+/* Home page: logo, bio with photo */
+.jo3ri-intro { text-align: center; padding: 1em 0 2em 0; }
+.jo3ri-intro .image { display: block; }
+.jo3ri-intro .image img { display: block; margin: 0 auto; width: 260px; max-width: 70%; }
+.jo3ri-bio .row { align-items: center; }
+.jo3ri-bio .image img { aspect-ratio: 1 / 1; border-radius: 50%; object-fit: cover; }
+@media screen and (max-width: 736px) { .jo3ri-bio .image { max-width: 60%; margin: 0 auto; } }
+
+/* Header: a house icon (link to the home page) instead of the site name */
+#header .logo.icon { font-size: 1.6em; letter-spacing: 0; line-height: 1; margin-bottom: 1.6em; }
+#header .logo.icon > .label { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }

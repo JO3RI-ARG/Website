@@ -1,20 +1,4 @@
 {
- "areas": {
-  "menu": "#nav",
-  "site": "#header, #copyright, [data-se-role~=\"social\"]",
-  "noDrop": "#nav, #header, #copyright"
- },
- "view": {
-  "removeBodyClass": [
-   "is-preload"
-  ],
-  "inject": [
-   {
-    "into": "#wrapper",
-    "html": "<div class=\"bg\"></div>"
-   }
-  ]
- },
  "menu": {
   "activeClass": "active"
  },
@@ -28,62 +12,64 @@
   "credit": "Template by",
   "background": "",
   "social": {
-   "github": "https://github.com/"
+   "github": "https://github.com/JO3RI-ARG",
+   "telegram": "https://t.me/joerigantois",
+   "twitter": "https://x.com/JO3RI_ARG",
+   "email": "joerigantois@gmail.com",
+   "signal": "https://signal.me/#eu/E6WTM6LUKfuQULtulzVKAqGpDhBUmtX3O0S1F77w1GvoZ3YseVpBAYDKxY-FX47h"
   }
- },
- "shared": {
-  "header": "\n\t\t\t<header id=\"header\">\n\t\t\t\t<a href=\"index.html\" class=\"logo\">{{name}}</a>\n\t\t\t</header>\n",
-  "social": "\n\t\t\t\t<ul class=\"icons\">\n{{items}}\t\t\t\t</ul>\n",
-  "socialItem": "\t\t\t\t\t<li><a href=\"{{url}}\" class=\"icon {{icon}}\"><span class=\"label\">{{label}}</span></a></li>\n",
-  "copyright": "\n\t\t\t<div id=\"copyright\">\n\t\t\t\t<ul><li>&copy; {{copyright}}</li><li>{{credit}} <a href=\"https://html5up.net\">HTML5 UP</a></li></ul>\n\t\t\t</div>\n"
- },
- "background": {
-  "file": "assets/css/site.css",
-  "css": "#wrapper > .bg {\n\tbackground-image: url(\"../../images/overlay.png\"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(\"../../{{path}}\");\n}\n"
- },
- "elements": {
-  "title": "<h2>New title</h2>",
-  "text": "<p>Write your text here.</p>",
-  "image": "<div class=\"image fit\"><img src=\"{{placeholder}}\" alt=\"\" /></div>",
-  "imagetext": "<div class=\"row gtr-uniform\" data-se=\"cols\"><div class=\"col-6 col-12-small\" data-se=\"col\"><div class=\"image fit\"><img src=\"{{placeholder}}\" alt=\"\" /></div></div><div class=\"col-6 col-12-small\" data-se=\"col\"><h3>Title</h3><p>Write your text here.</p></div></div>",
-  "button": "<ul class=\"actions special\"><li><a href=\"index.html\" class=\"button\">Button text</a></li></ul>",
-  "columns2": "<div class=\"row gtr-uniform\" data-se=\"cols\"><div class=\"col-6 col-12-small\" data-se=\"col\"><p>Left column</p></div><div class=\"col-6 col-12-small\" data-se=\"col\"><p>Right column</p></div></div>",
-  "columns3": "<div class=\"row gtr-uniform\" data-se=\"cols\"><div class=\"col-4 col-12-small\" data-se=\"col\"><p>Column one</p></div><div class=\"col-4 col-12-small\" data-se=\"col\"><p>Column two</p></div><div class=\"col-4 col-12-small\" data-se=\"col\"><p>Column three</p></div></div>",
-  "spacer": "<div class=\"se-spacer\" style=\"height: 40px;\"></div>",
-  "divider": "<hr />",
-  "embed": "<div class=\"se-embed\"><p>Embed code: paste your HTML in the settings panel on the right.</p></div>",
-  "section": "<section class=\"post\" data-se=\"section blocks\"><h2>New section</h2><p>Write your text here.</p></section>"
  },
  "columns": {
   "class": "col-{n} col-12-small"
  },
- "newPage": {
-  "remove": [
-   "#intro"
-  ],
-  "removeClass": [
-   [
-    "#wrapper",
-    "fade-in"
-   ]
-  ],
-  "main": "\t\t\t\t<section class=\"post\" data-se=\"section blocks\">\n\t\t\t\t\t<header class=\"major\">\n\t\t\t\t\t\t<h1>{{title}}</h1>\n\t\t\t\t\t</header>\n\t\t\t\t\t<p>Write your text here.</p>\n\t\t\t\t</section>\n"
- },
  "project": {
   "listPage": "index.html",
   "list": "projects",
-  "card": "\t\t\t\t\t<article data-se-type=\"project\" data-se-date=\"{{date}}\" data-se-github=\"{{github}}\">\n\t\t\t\t\t\t<header>\n\t\t\t\t\t\t\t<span class=\"date\">{{date}}</span>\n\t\t\t\t\t\t\t<h2><a href=\"{{page}}\">{{title}}</a></h2>\n\t\t\t\t\t\t</header>\n\t\t\t\t\t\t<a href=\"{{page}}\" class=\"image fit\"><img src=\"{{image}}\" alt=\"{{title}}\" /></a>\n\t\t\t\t\t\t<p>{{text}}</p>\n\t\t\t\t\t\t<ul class=\"actions special\">\n\t\t\t\t\t\t\t<li><a href=\"{{page}}\" class=\"button\">Read more</a></li>\n<!--se:if github-->\t\t\t\t\t\t\t<li><a href=\"{{github}}\" class=\"button icon brands fa-github\">GitHub</a></li>\n<!--/se:if-->\t\t\t\t\t\t</ul>\n\t\t\t\t\t</article>\n",
-  "page": "\t\t\t\t<section class=\"post\" data-se=\"section blocks\">\n\t\t\t\t\t<header class=\"major\">\n\t\t\t\t\t\t<span class=\"date\">{{date}}</span>\n\t\t\t\t\t\t<h1>{{title}}</h1>\n\t\t\t\t\t\t<p>{{text}}</p>\n\t\t\t\t\t</header>\n\t\t\t\t\t<div class=\"image main\"><img src=\"{{image}}\" alt=\"{{title}}\" /></div>\n\t\t\t\t\t<h2>What it does</h2>\n\t\t\t\t\t<p>Describe the project: what problem it solves and how it works.</p>\n\t\t\t\t\t<h2>Parts</h2>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>First part</li>\n\t\t\t\t\t\t<li>Second part</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<h2>How I built it</h2>\n\t\t\t\t\t<p>The steps, the mistakes and what you would do differently.</p>\n<!--se:if github-->\t\t\t\t\t<ul class=\"actions special\">\n\t\t\t\t\t\t<li><a href=\"{{github}}\" class=\"button large icon brands fa-github\">Code on GitHub</a></li>\n\t\t\t\t\t</ul>\n<!--/se:if-->\t\t\t\t</section>\n"
+  "card": "\t\t\t\t\t\t<article class=\"style{{n}}\" data-se-type=\"project\" data-se-date=\"{{date}}\" data-se-github=\"{{github}}\">\n\t\t\t\t\t\t\t<span class=\"image\">\n\t\t\t\t\t\t\t\t<img src=\"{{image}}\" alt=\"{{title}}\" />\n\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t<a href=\"{{page}}\">\n\t\t\t\t\t\t\t\t<span class=\"date\">{{date}}</span>\n\t\t\t\t\t\t\t\t<h2>{{title}}</h2>\n\t\t\t\t\t\t\t\t<div class=\"content\">\n\t\t\t\t\t\t\t\t\t<p>{{text}}</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</article>\n",
+  "page": "\t\t\t\t\t<section data-se=\"section blocks\" data-se-role=\"project\">\n\t\t\t\t\t\t<h1>{{title}}</h1>\n\t\t\t\t\t\t<p>{{text}}</p>\n\t\t\t\t\t\t<span class=\"image main\"><img src=\"{{image}}\" alt=\"{{title}}\" /></span>\n<!--se:if github-->\t\t\t\t\t\t<ul class=\"actions\">\n\t\t\t\t\t\t\t<li><a href=\"{{github}}\" class=\"button primary icon brands fa-github\">Code on GitHub</a></li>\n\t\t\t\t\t\t</ul>\n<!--/se:if-->\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"post\" data-se=\"section blocks\" data-se-type=\"post\">\n\t\t\t\t\t\t<h2>First blog post</h2>\n\t\t\t\t\t\t<p class=\"date\">{{date}}</p>\n\t\t\t\t\t\t<p>What you did, what worked and what did not. Click this text to change it. Use + New blog post to add the next one: the newest post goes on top, and its date becomes the date on the project's tile on the home page.</p>\n\t\t\t\t\t</section>\n",
+  "post": "\t\t\t\t\t<section class=\"post\" data-se=\"section blocks\" data-se-type=\"post\">\n\t\t\t\t\t\t<h2>{{title}}</h2>\n\t\t\t\t\t\t<p class=\"date\">{{date}}</p>\n\t\t\t\t\t\t<p>Write your blog post here: what you did, what worked and what did not.</p>\n\t\t\t\t\t</section>\n"
  },
  "starters": {
   "home": "index.html",
   "page": "about.html"
  },
+ "areas": {
+  "menu": "#header nav, #menu",
+  "site": "#header, .copyright, [data-se-role~=\"social\"]",
+  "noDrop": "#header, #menu, .copyright, [data-se-role~=\"social\"]"
+ },
+ "view": {
+  "removeBodyClass": [
+   "is-preload"
+  ]
+ },
+ "shared": {
+  "header": "\n\t\t\t\t\t<a href=\"index.html\" class=\"logo icon solid fa-home\" title=\"Home\"><span class=\"label\">Home</span></a>\n",
+  "social": "\n\t\t\t\t\t<section data-se-role=\"social\">\n\t\t\t\t\t\t<h2>Follow</h2>\n\t\t\t\t\t\t<ul class=\"icons\">\n{{items}}\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n",
+  "socialItem": "\t\t\t\t\t\t\t<li><a href=\"{{url}}\" class=\"icon style2 {{icon}}\"><span class=\"label\">{{label}}</span></a></li>\n",
+  "copyright": "\n\t\t\t\t\t<ul class=\"copyright\">\n\t\t\t\t\t\t<li>&copy; {{copyright}}</li><li>{{credit}} <a href=\"https://html5up.net\">HTML5 UP</a></li>\n\t\t\t\t\t</ul>\n"
+ },
+ "elements": {
+  "title": "<h2>New title</h2>",
+  "text": "<p>Write your text here.</p>",
+  "image": "<span class=\"image fit\"><img src=\"{{placeholder}}\" alt=\"\" /></span>",
+  "imagetext": "<div class=\"row gtr-uniform\" data-se=\"cols\"><div class=\"col-6 col-12-small\" data-se=\"col\"><span class=\"image fit\"><img src=\"{{placeholder}}\" alt=\"\" /></span></div><div class=\"col-6 col-12-small\" data-se=\"col\"><h3>Title</h3><p>Write your text here.</p></div></div>",
+  "button": "<ul class=\"actions\"><li><a href=\"index.html\" class=\"button primary\">Button text</a></li></ul>",
+  "columns2": "<div class=\"row gtr-uniform\" data-se=\"cols\"><div class=\"col-6 col-12-small\" data-se=\"col\"><p>Left column</p></div><div class=\"col-6 col-12-small\" data-se=\"col\"><p>Right column</p></div></div>",
+  "columns3": "<div class=\"row gtr-uniform\" data-se=\"cols\"><div class=\"col-4 col-12-small\" data-se=\"col\"><p>Column one</p></div><div class=\"col-4 col-12-small\" data-se=\"col\"><p>Column two</p></div><div class=\"col-4 col-12-small\" data-se=\"col\"><p>Column three</p></div></div>",
+  "spacer": "<div class=\"se-spacer\" style=\"height: 40px;\"></div>",
+  "divider": "<hr />",
+  "embed": "<div class=\"se-embed\"><p>Embed code: paste your HTML in the settings panel on the right.</p></div>",
+  "section": "<section data-se=\"section blocks\"><h2>New section</h2><p>Write your text here.</p></section>"
+ },
+ "newPage": {
+  "main": "\t\t\t\t\t<section data-se=\"section blocks\">\n\t\t\t\t\t\t<h1>{{title}}</h1>\n\t\t\t\t\t\t<p>Write your text here.</p>\n\t\t\t\t\t</section>\n"
+ },
  "theme": {
-  "id": "massively",
-  "name": "Massively",
+  "id": "phantom",
+  "name": "Phantom",
   "by": "HTML5 UP",
-  "url": "https://html5up.net/massively",
+  "url": "https://html5up.net/phantom",
   "licence": "Creative Commons Attribution 3.0 (CC BY 3.0)",
   "licenceUrl": "https://html5up.net/license"
  }
